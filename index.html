@@ -31,18 +31,33 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="./images/logo.svg" alt="logo" />
-      </div>
+      <img src="./images/logo.svg" alt="logo" />
     </header>
+    <main>
+      <section id="image">
+        <!-- <img
+          src="./images/hero-desktop.jpg"
+          alt="hero-desktop"
+          class="desktopImg"
+        /> -->
 
-    <div class="content">
-      <div class="left-content">
-        <h1><span>We're</span> <br />coming <br />soon</h1>
+        <img
+          src="./images/hero-mobile.jpg"
+          alt="hero-mobile"
+          class="mobileImg hidden"
+        />
+      </section>
+
+      <section id="texts">
+        <h1>
+          <span>We're</span> <br />
+          coming <br />soon
+        </h1>
 
         <p>
           Hello fellow shoppers! We're currently building our new fashion store.
@@ -50,37 +65,26 @@
           launch deals.
         </p>
 
-        <div class="input-field">
-          <input
-            type="text"
-            placeholder="Email Address"
-            class="errorInputIndicator"
-          />
-          <div class="error-icon">
-            <img src="./images/icon-error.svg" alt="icon-error" />
-          </div>
-          <button class="icon">
-            <img
-              src="./images/icon-arrow.svg"
-              alt="icon-arrow"
-              class="icon-arrow"
+        <form autocomplete="off">
+          <div>
+            <input
+              type="text"
+              placeholder="Email Address"
+              onkeydown="validation()"
             />
-          </button>
-        </div>
-      </div>
+            <label for="email" class="hidden">
+              <img src="./images/icon-error.svg" alt="icon-error" />
+            </label>
+            <button type="submit">
+              <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+            </button>
+          </div>
 
-      <div class="right-content">
-        <img src="./images/hero-desktop.jpg" alt="hero-desktop" />
-      </div>
-    </div>
+          <p class="hidden">Please provide a valid email</p>
+        </form>
+      </section>
+    </main>
 
-    <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
+<!--     <script src="script.js"></script> -->
   </body>
 </html>

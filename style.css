@@ -91,7 +91,7 @@ form .error-icon {
   margin-left: -60px;
   position: absolute;
   top: 78%;
-  left: 82%;
+  left: 83%;
   transform: translate(-50%, -50%);
 }
 
@@ -195,7 +195,7 @@ form button:hover {
   }
 
   form .error-icon {
-    top: 76%;
+    top: 74%;
     left: 64%;
   }
 }
